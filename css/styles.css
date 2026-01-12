@@ -11777,3 +11777,189 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+/* DITECH custom overrides */
+:root {
+  --font-display: "Space Grotesk", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --font-body: "Manrope", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --ditech-ink: #0f172a;
+  --ditech-ink-soft: #1f2937;
+  --ditech-accent: #f4b648;
+  --ditech-aqua: #0ea5a5;
+  --ditech-surface: #ffffff;
+  --ditech-sand: #f4f1ea;
+  --bs-body-font-family: var(--font-body);
+  --bs-body-color: var(--ditech-ink);
+  --bs-primary: var(--ditech-accent);
+  --bs-primary-rgb: 244, 182, 72;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 80% -10%, rgba(14, 165, 165, 0.12), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgba(244, 182, 72, 0.18), transparent 55%),
+    #f8f6f1;
+  color: var(--ditech-ink);
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
+.btn,
+.section-heading {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+}
+
+p,
+.section-subheading,
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+  font-family: var(--font-body);
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+#mainNav {
+  background: rgba(15, 23, 42, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+#mainNav .navbar-brand {
+  color: var(--ditech-accent);
+  letter-spacing: 0.18em;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: #f8fafc;
+  font-weight: 500;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: var(--ditech-accent);
+}
+
+header.masthead {
+  background-image: linear-gradient(120deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.35)),
+    url("../assets/img/header-bg.jpg");
+  background-position: center;
+}
+
+header.masthead .masthead-subheading {
+  font-style: normal;
+  font-size: clamp(1.05rem, 2.2vw, 1.6rem);
+  letter-spacing: 0.02em;
+  color: rgba(248, 250, 252, 0.82);
+}
+
+header.masthead .masthead-heading {
+  font-size: clamp(2.5rem, 6vw, 4.75rem);
+  letter-spacing: 0.2em;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #f7c968, #f0a840);
+  border: none;
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.18);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: linear-gradient(135deg, #f9d27b, #f0a840);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.24);
+}
+
+.page-section {
+  position: relative;
+}
+
+.page-section h3.section-subheading,
+.page-section .section-subheading.h3 {
+  font-style: normal;
+  color: rgba(15, 23, 42, 0.65);
+}
+
+.bg-light {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(244, 241, 234, 0.9)) !important;
+}
+
+#portfolio .portfolio-item {
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+  transform: translateZ(0);
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(14, 165, 165, 0.88);
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+  background-color: #ffffff;
+}
+
+.team-member {
+  padding: 2rem 1.5rem;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.08);
+}
+
+.contact-section {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(30, 41, 59, 0.94));
+  color: #f8fafc;
+}
+
+.contact-section#contact {
+  background-image: none;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1.5rem 1.75rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.3);
+}
+
+.contact-card a {
+  color: #fdd48c;
+}
+
+.footer {
+  color: var(--ditech-ink-soft);
+}
+
+@media (max-width: 576px) {
+  .page-section {
+    padding: 4.5rem 0;
+  }
+
+  .timeline:before {
+    left: 20px;
+  }
+
+  .timeline > li .timeline-image {
+    width: 56px;
+    height: 56px;
+  }
+
+  .timeline > li .timeline-panel {
+    padding: 0 0 0 90px;
+  }
+
+  .timeline > li .timeline-panel:before,
+  .timeline > li .timeline-panel:after {
+    display: none;
+  }
+}
